@@ -1,0 +1,84 @@
+{
+    "RECORDS": [
+        {
+            "qid": "1",
+            "question": "Dosen menyampaikan kontrak perkuliahan kepada mahasiswa",
+            "group": "A"
+        },
+        {
+            "qid": "2",
+            "question": "Dosen menyampaikan tujuan perkuliahan yang akan dicapai",
+            "group": "A"
+        },
+        {
+            "qid": "3",
+            "question": "Dosen tepat waktu dalam mengawali danmengakhiri perkuliahan",
+            "group": "B"
+        },
+        {
+            "qid": "4",
+            "question": "Dosen menggunakan media/alat pembelajaran dalam setiappertemuan",
+            "group": "B"
+        },
+        {
+            "qid": "5",
+            "question": "Dosen menguasi materi kuliah pada saat mengajar",
+            "group": "B"
+        },
+        {
+            "qid": "6",
+            "question": "Dosen menggunakan metoda perkuliahan yang bervariasi",
+            "group": "B"
+        },
+        {
+            "qid": "7",
+            "question": "Dosen selalu membuka sesi tanya jawab",
+            "group": "B"
+        },
+        {
+            "qid": "8",
+            "question": "Dosen memberikan pertemuan tambahan jika materikurang",
+            "group": "B"
+        },
+        {
+            "qid": "9",
+            "question": "Dosen mampu memotivasi siswa agar aktif dalam proses belajar mengajar",
+            "group": "B"
+        },
+        {
+            "qid": "10",
+            "question": "Penampilan dosen dalam berpakaian rapi, bersih dan serasi",
+            "group": "B"
+        },
+        {
+            "qid": "11",
+            "question": "Penggunaan bahasa dalam pelaksanaan perkuliahan : jelas, sopan dansantun",
+            "group": "B"
+        },
+        {
+            "qid": "12",
+            "question": "Dosen bersedia melakukan konsultasi bila mahasiswa kesulitan dalam perkuliahan",
+            "group": "B"
+        },
+        {
+            "qid": "13",
+            "question": "Dosen menerima saran dan kritik dari mahasiswa",
+            "group": "B"
+        },
+        {
+            "qid": "14",
+            "question": "Soal ujian sesuai dengan materi kuliah yang disampaikan",
+            "group": "C"
+        },
+        {
+            "qid": "15",
+            "question": "Dosen obyektifdantransparandalam memberikan nilai kepada mahasiswa",
+            "group": "C"
+        },
+        {
+            "qid": "16",
+            "question": "Jika ada keberatan atas nilai mahasiswa, dosen menerima keberatan tersebut",
+            "group": "C"
+        }
+    ]
+}

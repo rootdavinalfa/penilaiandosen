@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2020.
+  ~ Davin Alfarizky Putra Basudewa , dbasudewa@gmail.com
+  ~ Educational References Only
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_undraw_male_avatar_323b" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rvDosenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Dosen"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/rvMkText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M.k testetet"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</LinearLayout>

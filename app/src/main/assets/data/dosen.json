@@ -1,0 +1,20 @@
+{
+    "RECORDS": [
+        {
+            "dosenid": "1",
+            "dosenname": "Mr. Soetomo"
+        },
+        {
+            "dosenid": "2",
+            "dosenname": "Ms. Lina"
+        },
+        {
+            "dosenid": "3",
+            "dosenname": "Mr. Potato"
+        },
+        {
+            "dosenid": "4",
+            "dosenname": "Mr. Asep"
+        }
+    ]
+}

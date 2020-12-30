@@ -1,0 +1,54 @@
+{
+    "RECORDS": [
+        {
+            "dosenid": "1",
+            "lecturerid": "1",
+            "mkid": "1"
+        },
+        {
+            "dosenid": "1",
+            "lecturerid": "2",
+            "mkid": "3"
+        },
+        {
+            "dosenid": "1",
+            "lecturerid": "3",
+            "mkid": "4"
+        },
+        {
+            "dosenid": "1",
+            "lecturerid": "4",
+            "mkid": "6"
+        },
+        {
+            "dosenid": "2",
+            "lecturerid": "5",
+            "mkid": "2"
+        },
+        {
+            "dosenid": "2",
+            "lecturerid": "6",
+            "mkid": "3"
+        },
+        {
+            "dosenid": "4",
+            "lecturerid": "7",
+            "mkid": "1"
+        },
+        {
+            "dosenid": "5",
+            "lecturerid": "8",
+            "mkid": "5"
+        },
+        {
+            "dosenid": "3",
+            "lecturerid": "9",
+            "mkid": "3"
+        },
+        {
+            "dosenid": "4",
+            "lecturerid": "10",
+            "mkid": "6"
+        }
+    ]
+}

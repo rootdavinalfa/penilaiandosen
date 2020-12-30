@@ -1,0 +1,40 @@
+{
+    "RECORDS": [
+        {
+            "lecturerid": "1",
+            "username": "test"
+        },
+        {
+            "lecturerid": "2",
+            "username": "test"
+        },
+        {
+            "lecturerid": "3",
+            "username": "test"
+        },
+        {
+            "lecturerid": "10",
+            "username": "test"
+        },
+        {
+            "lecturerid": "9",
+            "username": "test"
+        },
+        {
+            "lecturerid": "2",
+            "username": "davin"
+        },
+        {
+            "lecturerid": "3",
+            "username": "davin"
+        },
+        {
+            "lecturerid": "1",
+            "username": "davin"
+        },
+        {
+            "lecturerid": "5",
+            "username": "test"
+        }
+    ]
+}

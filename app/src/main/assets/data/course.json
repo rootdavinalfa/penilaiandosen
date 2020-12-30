@@ -1,0 +1,28 @@
+{
+    "RECORDS": [
+        {
+            "mkid": "1",
+            "mkname": "Teknik Simulasi"
+        },
+        {
+            "mkid": "2",
+            "mkname": "Pemprograman Dasar"
+        },
+        {
+            "mkid": "3",
+            "mkname": "PBO 1"
+        },
+        {
+            "mkid": "4",
+            "mkname": "Pemprograman Mobile"
+        },
+        {
+            "mkid": "5",
+            "mkname": "PBO2"
+        },
+        {
+            "mkid": "6",
+            "mkname": "English Course 1"
+        }
+    ]
+}
