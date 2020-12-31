@@ -15,16 +15,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
-import xyz.dvnlabs.penilaiandosen.data.MainDatabase
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
+import org.koin.core.component.KoinApiExtension
 import xyz.dvnlabs.penilaiandosen.databinding.HomeFragmentBinding
 import xyz.dvnlabs.penilaiandosen.ui.base.FragmentBase
 import xyz.dvnlabs.penilaiandosen.ui.list.UserCourseListRV
+import xyz.dvnlabs.penilaiandosen.ui.vm.DataViewModel
 import xyz.dvnlabs.penilaiandosen.utils.Preferences
 
+@KoinApiExtension
 class FragmentHome : FragmentBase() {
     private var _binding: HomeFragmentBinding? = null
     private val preferences: Preferences by inject()
-    private val mainDataBase: MainDatabase by inject()
+    private val dataVM: DataViewModel by sharedViewModel()
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -44,7 +47,9 @@ class FragmentHome : FragmentBase() {
         lifecycleScope.launch {
             preferences.getUsername().collect {
                 binding.homeUserName.text = it
-                adapter.setNewData(mainDataBase.userCourseDAO().getUserCourseDosenByUsername(it))
+                dataVM.getUserCourse(it).observe(viewLifecycleOwner, { uc ->
+                    adapter.setNewData(uc)
+                })
             }
         }
     }

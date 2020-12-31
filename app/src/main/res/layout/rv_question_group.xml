@@ -25,10 +25,11 @@
             android:id="@+id/rvGroupName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
+            android:padding="15dp"
             android:text="A.Test Group"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="22sp" />
+            android:textSize="24sp" />
 
         <net.cachapa.expandablelayout.ExpandableLayout
             android:id="@+id/rvGroupExpand"
