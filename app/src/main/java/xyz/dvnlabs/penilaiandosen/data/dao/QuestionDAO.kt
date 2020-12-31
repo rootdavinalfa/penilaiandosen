@@ -22,4 +22,10 @@ interface QuestionDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertQuestion(question: Question)
 
+    @Query("SELECT `group` FROM question GROUP BY `group`")
+    fun getQuestionGroup(): Flow<List<String>>
+
+    @Query("SELECT * FROM question WHERE `group` = :grp ")
+    fun getQuestionByGroup(grp: String): Flow<List<Question>>
+
 }

@@ -33,6 +33,7 @@ open class FragmentBase : Fragment() {
             when (destination.id) {
                 R.id.fragmentMain -> toolbar.visibility = View.GONE
                 R.id.fragmentHome -> toolbar.visibility = View.GONE
+                R.id.fragmentQuestioner -> toolbar.visibility = View.GONE
                 else -> toolbar.visibility = View.VISIBLE
             }
         }

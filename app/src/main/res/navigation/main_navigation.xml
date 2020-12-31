@@ -15,10 +15,35 @@
         android:label="Main Menu" >
         <action
             android:id="@+id/action_fragmentMain_to_fragmentHome"
-            app:destination="@id/fragmentHome" />
+            app:destination="@id/fragmentHome"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
     </fragment>
     <fragment
         android:id="@+id/fragmentHome"
         android:name="xyz.dvnlabs.penilaiandosen.ui.fragment.FragmentHome"
-        android:label="FragmentHome" />
+        android:label="FragmentHome" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentQuestioner"
+            app:destination="@id/fragmentQuestioner" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuestioner"
+        android:name="xyz.dvnlabs.penilaiandosen.ui.fragment.FragmentQuestioner"
+        android:label="FragmentQuestioner" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="dosenid"
+            app:argType="integer" />
+        <argument
+            android:name="mkname"
+            app:argType="string" />
+        <argument
+            android:name="lecturerid"
+            app:argType="integer" />
+    </fragment>
 </navigation>

@@ -12,12 +12,12 @@
         },
         {
             "qid": "3",
-            "question": "Dosen tepat waktu dalam mengawali danmengakhiri perkuliahan",
+            "question": "Dosen tepat waktu dalam mengawali dan mengakhiri perkuliahan",
             "group": "B"
         },
         {
             "qid": "4",
-            "question": "Dosen menggunakan media/alat pembelajaran dalam setiappertemuan",
+            "question": "Dosen menggunakan media/alat pembelajaran dalam setiap pertemuan",
             "group": "B"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "qid": "8",
-            "question": "Dosen memberikan pertemuan tambahan jika materikurang",
+            "question": "Dosen memberikan pertemuan tambahan jika materi kurang",
             "group": "B"
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "qid": "11",
-            "question": "Penggunaan bahasa dalam pelaksanaan perkuliahan : jelas, sopan dansantun",
+            "question": "Penggunaan bahasa dalam pelaksanaan perkuliahan : jelas, sopan dan santun",
             "group": "B"
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "qid": "15",
-            "question": "Dosen obyektifdantransparandalam memberikan nilai kepada mahasiswa",
+            "question": "Dosen obyektif dan transparandalam memberikan nilai kepada mahasiswa",
             "group": "C"
         },
         {

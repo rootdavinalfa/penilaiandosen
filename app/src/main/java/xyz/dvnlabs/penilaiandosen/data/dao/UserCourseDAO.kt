@@ -6,14 +6,14 @@
 
 package xyz.dvnlabs.penilaiandosen.data.dao
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.room.*
+import androidx.sqlite.db.SimpleSQLiteQuery
+import androidx.sqlite.db.SupportSQLiteQuery
 import kotlinx.coroutines.flow.Flow
 import xyz.dvnlabs.penilaiandosen.data.entity.Courses
 import xyz.dvnlabs.penilaiandosen.data.entity.Lecturer
 import xyz.dvnlabs.penilaiandosen.data.entity.UserCourse
+import xyz.dvnlabs.penilaiandosen.data.view.UserCourseDosenView
 
 @Dao
 interface UserCourseDAO {
@@ -26,5 +26,15 @@ interface UserCourseDAO {
 
     @Query("SELECT b.* FROM usercourse a INNER JOIN lecturer b ON a.lecturerid AND b.lecturerid WHERE a.username = :username")
     fun findLecturerByUsername(username: String): Flow<List<Lecturer>>
+
+    @RawQuery
+    suspend fun findUserCourseDosen(query: SupportSQLiteQuery): List<UserCourseDosenView>
+
+    suspend fun getUserCourseDosenByUsername(username: String): List<UserCourseDosenView> {
+        val query =
+            "SELECT a.lecturerid,a.username,b.dosenid,b.mkid,d.mkname,c.dosenname  FROM usercourse a INNER JOIN lecturer b ON a.lecturerid = b.lecturerid INNER JOIN dosen c ON b.dosenid = c.dosenid INNER JOIN course d ON b.mkid = d.mkid WHERE a.username = ?"
+        val simpleSqliteQuery = SimpleSQLiteQuery(query, arrayOf(username))
+        return findUserCourseDosen(simpleSqliteQuery)
+    }
 
 }
