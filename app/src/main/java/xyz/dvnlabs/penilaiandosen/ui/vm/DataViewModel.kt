@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020.
+ * Copyright (c) 2021.
  * Davin Alfarizky Putra Basudewa , dbasudewa@gmail.com
  * Educational References Only
  */
@@ -17,6 +17,7 @@ import org.koin.core.component.inject
 import org.koin.core.parameter.parametersOf
 import xyz.dvnlabs.penilaiandosen.data.MainDatabase
 import xyz.dvnlabs.penilaiandosen.data.view.UserCourseDosenView
+import xyz.dvnlabs.penilaiandosen.data.view.UserCourseTotalPenilaianDosen
 
 @KoinApiExtension
 class DataViewModel(application: Application) : AndroidViewModel(application), KoinComponent {
@@ -31,6 +32,15 @@ class DataViewModel(application: Application) : AndroidViewModel(application), K
             )
         }.asLiveData()
 
+    }
+
+
+    suspend fun getTotalPenilaianDosen(username: String): LiveData<List<UserCourseTotalPenilaianDosen>> {
+        return flow {
+            emit(
+                mainDatabase.examineResultDAO().getOverviewPenilaianosen(username)
+            )
+        }.asLiveData()
     }
 
 }

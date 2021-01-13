@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020.
+ * Copyright (c) 2021.
  * Davin Alfarizky Putra Basudewa , dbasudewa@gmail.com
  * Educational References Only
  */
@@ -28,6 +28,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 }
 

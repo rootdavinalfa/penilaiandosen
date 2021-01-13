@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2020.
+  ~ Copyright (c) 2021.
   ~ Davin Alfarizky Putra Basudewa , dbasudewa@gmail.com
   ~ Educational References Only
   -->
@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_fragmentHome_to_fragmentQuestioner"
             app:destination="@id/fragmentQuestioner" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentOverview"
+            app:destination="@id/fragmentOverview" />
     </fragment>
     <fragment
         android:id="@+id/fragmentQuestioner"
@@ -46,4 +49,8 @@
             android:name="lecturerid"
             app:argType="integer" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentOverview"
+        android:name="xyz.dvnlabs.penilaiandosen.ui.fragment.FragmentOverview"
+        android:label="Overview" />
 </navigation>

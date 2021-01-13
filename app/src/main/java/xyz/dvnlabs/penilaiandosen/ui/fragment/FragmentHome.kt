@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020.
+ * Copyright (c) 2021.
  * Davin Alfarizky Putra Basudewa , dbasudewa@gmail.com
  * Educational References Only
  */
@@ -11,12 +11,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 import org.koin.core.component.KoinApiExtension
+import xyz.dvnlabs.penilaiandosen.R
 import xyz.dvnlabs.penilaiandosen.databinding.HomeFragmentBinding
 import xyz.dvnlabs.penilaiandosen.ui.base.FragmentBase
 import xyz.dvnlabs.penilaiandosen.ui.list.UserCourseListRV
@@ -51,6 +53,10 @@ class FragmentHome : FragmentBase() {
                     adapter.setNewData(uc)
                 })
             }
+        }
+
+        binding.homeBtnOverview.setOnClickListener {
+            findNavController().navigate(R.id.fragmentOverview)
         }
     }
 

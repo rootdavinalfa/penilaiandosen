@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020.
+ * Copyright (c) 2021.
  * Davin Alfarizky Putra Basudewa , dbasudewa@gmail.com
  * Educational References Only
  */
@@ -67,6 +67,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc03"
     implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 
 

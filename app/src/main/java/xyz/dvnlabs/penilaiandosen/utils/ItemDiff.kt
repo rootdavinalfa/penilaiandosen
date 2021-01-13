@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020.
+ * Copyright (c) 2021.
  * Davin Alfarizky Putra Basudewa , dbasudewa@gmail.com
  * Educational References Only
  */
@@ -38,6 +38,7 @@ class ItemDiff(val old: List<Any>, val new: List<Any>, val fieldCompares: Array<
                 .filter { it.visibility == KVisibility.PUBLIC }
                 .filterIsInstance<KMutableProperty<*>>()
                 .first { it.getter.name == fieldCompare }.getter.call(new[newItemPosition])
+            println("OLDVAL :$oldValue NEWVAL: $newValue")
             temp1 = oldValue == newValue
             temp = temp == temp1
         }
